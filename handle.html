@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+<?php
+
+include "config.php";
+
+
+if(isset($_POST["submit"])){
+
+
+    $fullname=$_POST["fullname"];
+    $email=$_POST["email"];
+    $tel=$_POST["tel"];
+
+    $program=$_POST["program"];
+    $message=$_POST["message"];
+   
+
+    $sql="INSERT INTO `hddate1`(`fullname`, `email`, `tel`, `program`, `message`) VALUES 
+    ('$fullname','$email','$tel','$program','$message')";
+    
+
+
+    $result=mysqli_query($link,$sql);
+
+          
+
+    if ($result) {
+      
+        echo "Record was added succefully";
+        
+        # code...
+    } else {
+        
+         echo "Error executing code $sql".mysqli_error($link);
+
+    }
+
+
+
+
+
+
+
+}

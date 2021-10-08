@@ -1,0 +1,91 @@
+.body{
+
+    background-image: url(images/kk8.jpeg);
+    
+}
+.bg-img{
+    background: url(images/kk7.jpeg);
+   
+}
+.body10{
+
+    background-image: url(images/11.jpeg);
+   
+}
+
+
+.bg-green{
+    color: white;
+ 
+  
+}
+.nav:hover{
+    background-color:whitesmoke;
+}
+
+.nav li a:hover:not(.active){
+    background-color:gray;
+}
+
+
+
+.mar{
+     
+    color:black;
+    text-align: center;
+    
+}
+.mar2{
+   
+   color:black;
+}
+.mar3{
+   
+    color:white;
+ }
+
+
+
+.aboutus{
+ 
+    font-size: x-large;
+    
+
+}
+
+.center{
+ 
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.bd{
+    border: 0.9px solid black;
+    
+}
+
+.flex-container{
+    display: flex;
+    
+}
+
+.mar4{
+   
+    color:whitesmoke
+ }
+
+.gallery{
+    margin: 2px;
+    float: left;
+    width: 300px; 
+}
+.gallery img{
+border: 2px solid black;
+margin-top: 5px;
+
+}
+
+.bdc{
+    background: lightgray;
+}

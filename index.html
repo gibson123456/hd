@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     <script src="bootstrap/js/jquery.min.js"></script>
+     <script src="bootstrap/js/popper.min.js"></script>
+     <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body class="bdc">
+    <div class="container-fluid">   
+         
+        <div class="m-1">  
+            <nav class="navbar navbar-expand-lg navbar-light nav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i>H/D High Definition</i></a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html#details" tabindex="1">About Us</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contact Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="index.html">Our Details</a></li>
+                          <li><a class="dropdown-item" href="index.html">Maps</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="index.html">Fill a Form</a></li>
+                          <li><a class="dropdown-item" href="index.html">View Detail</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="index.html" tabindex="-1" >Our Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="index.html" tabindex="-1" ><b>Cover Your Events</b></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="accout.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="index.html">Reset password</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="index.html#theform">Fill a Form</a></li>
+                          <li><a class="dropdown-item" href="index.html">View Details</a></li>
+                          <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+                        </ul>
+                         
+                        </ul>
+                      </li><li class="nav-item">
+                         <a  class="nav-link" href="index.html">Login</a>
+
+                      </li>
+
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="mar2">
+            <marquee behavior="alternate"> <b>Welcome to HIGH DEFINITION. <b><b>Log-in</b></b> if you already have an account with us. <b><b>sign-up</b></b> Register Here!</b>
+                </marquee><br><br><br>
+        </div>
+
+        <div class="m-1 p-3">  
+            
+
+            <div>
+                  <h5 class=" mar2">LOGIN </h5>
+              <form action="home.html" method= "post" class="col-5">
+                         
+                 <div class="mb-3 mar2">
+                       <label class="form-label" for="user">User Name</label>
+                       <input type="email" class= "form-control styleinput" name="email" id="email" required>
+                 </div>
+                
+                 <div class="mb-3 mar2">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" class= "form-control styleinput" name="password" id="password" required>
+                   
+                 </div>
+                      
+                 <div class="mb-3 mar2">
+                 <input class="btn btn-primary" type="submit" value="Login" name="submit"> 
+                
+
+  
+                 </div>
+                 
+                
+                 <div class="mb-3">
+                  <p><a href="index.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="mar2" > <b>You dont have an account? Register Here </b></a> </p>
+  
+                 </div>
+                
+  
+  
+              </form>
+  
+  
+            </div>
+  
+             
+          </div>
+            
+          <div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">REGISTER HERE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="signup.html"  method="post" class="center">
+                         
+            <div class="mb-3">
+                  <label class="form-label" for="user">Full Name</label>
+                  <input type="text" class="form-control styleinput" name="fullname" id="fullname" required>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" class="form-control styleinput" name="email" id="email" required>
+            </div>
+  
+           
+            <div class="mb-3">
+                   <label class="form-label" for="password">Password</label>
+                   <input type="password" class="form-control styleinput" name="password" id="password" required>
+              
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label" for="cpassword">Confirm Password</label>
+              <input type="password" class="form-control styleinput" name="confirmpassword" id="password" required>
+         
+            </div>
+  
+            <div class="p-3">
+                    <input class="btn btn-primary" type="submit" value="SignUp" name="submit">
+                    <p class="p-3"> Have account? <a href="index.html">Log in</a></p>
+      
+                </div>
+
+                <div>
+          <br><br><img src="images/kk10.jpeg" alt="loading" width="100%" height="150px">
+      </div>
+  
+         </form>
+  
+  
+  
+        </div>
+        
+      </div>
+      
+     </div>
+  
+       
+  
+      </div>
+      
+      
+
+  </div>    
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>m<br><div>
+        <img src="images/kk10.jpeg" alt="loading" width="100%" height="150px">
+    </div>
+  
+</body>
+</html>

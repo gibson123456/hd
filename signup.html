@@ -1,0 +1,57 @@
+<?php
+
+include "config.php";
+
+if (isset($_POST["submit"])) {
+    
+    $fullname=$_POST["fullname"];
+    $email=$_POST["email"];
+    $password=$_POST["password"];
+    $confirmpassword=$_POST["confirmpassword"];
+
+    //validate
+
+    if (strlen($password)<6) {
+        $password_error= "Password must have more than 6 characters";
+        
+        echo $password_error;
+    }else {
+        $store_password=trim($password);
+    }
+
+    //validate confirm password 
+
+    if ($confirmpassword!=$store_password) {
+        $cp_error="Passwords do not match";
+        echo $cp_error;
+    }else {
+        $final_password=password_hash($store_password,PASSWORD_DEFAULT);    
+    }
+
+    if (empty($password_error) and empty($cp_error)) {
+        $sql="INSERT INTO `user`(`fullname`, `email`, `password`) VALUES ('$fullname','$email','$final_password')";
+
+        $result=mysqli_query($link,$sql);
+
+        if ($result) {
+            
+            echo "<div class='alert alert-info'=alert'>You have been registered successfully</div>";
+            header("Location:index2.php");
+            exit();
+
+        } else {
+            
+            echo "Error excuting query $sql". mysqli_connect_error($link);
+        }
+
+
+    }
+
+
+
+}
+
+
+
+
+?>

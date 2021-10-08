@@ -1,0 +1,15 @@
+<?php
+
+session_start();
+
+#unset 
+$_SESSION=array();
+
+#destroy
+session_destroy();
+
+#redirect back to login
+header("Location: index.php");
+
+exit();
+
